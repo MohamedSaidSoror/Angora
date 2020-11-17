@@ -1,0 +1,1219 @@
+:root
+{
+    --mainColor:rgba(242, 84, 84,0.85);
+}
+*
+{
+    box-sizing: border-box;
+    font-family: 'segoe ui light';
+}
+.arrow-top
+{
+    background-color: var(--mainColor);
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    opacity: .7;
+    transition: opacity .3s;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 555;
+}
+.arrow-top:hover
+{
+    opacity: 1;
+    color: #fff;
+}
+.arrow-top i
+{
+    font-size: 25px;
+    color: #fff;
+}
+.settings 
+{
+    z-index: 1;
+    position: fixed;
+    top: 150px;
+    left: 0px;
+}
+.settings .colors
+{
+    width: 150px;
+    background-color: #fff;
+    display: none;
+}
+.settings i
+{
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+.settings .colors ul
+{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+    margin-top: 30px;
+}
+
+.settings .colors ul li
+{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    list-style-type:none;
+    padding: 10px;
+}
+.settings .colors li:first-child{
+    background-color: #f25454;
+}
+.settings .colors li:nth-child(2){
+    background-color: rgb(78, 156, 181);
+}
+.settings .colors li:nth-child(3){
+    background-color: rgb(70, 205, 167);
+}
+.settings .colors li:nth-child(4){
+    background-color: rgb(200, 111, 152);
+}
+.settings .colors li:last-child{
+    background-color: rgb(238, 143, 104);
+}
+#home
+{
+    position: relative;
+}
+nav
+{
+    z-index: 2;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0 !important;
+    border-bottom: solid 1px #fff;   
+}
+nav .navbar-brand
+{
+    width: 40%;
+}
+
+nav a
+{
+    margin: 7px;
+    color: #fff !important;
+    font-weight: bold;
+}
+nav a:hover
+{
+    color: var(--mainColor) !important;
+}
+.fixedNav
+{
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    background-color: #333;
+    color: #fff;
+    z-index: 222;  
+    display: none;
+}
+.active
+{
+    color:var(--mainColor) !important;
+}
+.carousel
+{
+    position: relative;
+}
+.carousel-item .carousel-caption
+{
+    position: absolute !important;
+    bottom: 150px;
+    left: 20%;
+}
+.carousel-item .carousel-caption h1
+{
+    font-size: 80px;
+    font-weight: bold;
+    padding: 100px;
+}
+
+.carousel .carousel-control-prev
+{
+    height: 60px;
+    width: 60px;
+    position: absolute !important;
+    top: 50%;
+    left: 0;
+    transition: all 0.3s;
+    border: solid 1px #fff;
+    padding: 20px;
+    font-size: 22px;
+}
+.carousel .carousel-control-prev .inner
+{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -100%;
+    transition: all 0.3s;
+    
+}
+.carousel .carousel-control-prev i
+{
+    margin-top: 9px;
+    z-index: 38388;
+}
+.carousel .carousel-control-prev:hover .inner
+{
+    left: 0;
+}
+.carousel .carousel-control-prev:hover i
+{
+    color: var(--mainColor);
+}
+
+
+
+
+
+
+.carousel .carousel-control-next
+{
+    height: 60px;
+    width: 60px;
+    position: absolute !important;
+    top: 42%;
+    left: 0;
+    transition: all 0.3s;
+    border: solid 1px #fff;
+    padding: 20px;
+    font-size: 22px;
+}
+.carousel .carousel-control-next .inner
+{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -100%;
+    transition: all 0.3s;
+    
+}
+.carousel .carousel-control-next i
+{
+    margin-top: 10px;
+    z-index: 38388;
+}
+.carousel .carousel-control-next:hover .inner
+{
+    left: 0;
+}
+.carousel .carousel-control-next:hover i
+{
+    color: var(--mainColor);
+}
+
+#about
+{
+    
+    text-align: center;
+    padding: 50px 0;
+}
+#about .caption
+{
+    width: 60%;
+    margin: auto;
+}
+#about .caption h1
+{
+    font-weight: bold;
+}
+#about .caption hr
+{
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    font-weight: bold;
+    transition: width 0.3s;
+}
+#about .caption:hover hr
+{
+    width: 70px;
+}
+#about .caption p
+{
+    padding: 20px;
+    font-size: 22px;
+    color: #999;
+}
+#about .content p
+{
+    text-align: left;
+    color: #999;
+    font-size: 17px;
+}
+#about .progress
+{
+    height: 3px;
+}
+#about .progress .progress-bar
+{
+    background-color: var(--mainColor) ;
+}
+#about .progress-title
+{
+    display: flex;
+    justify-content: space-between;
+}
+#about .progress-title h6
+{
+    font-weight: bold;
+}
+#about .missions
+{
+    background-image: url('../images/mission.jpg');
+    background-attachment: fixed;
+    padding: 100px;
+    color: #fff;
+
+}
+
+#about .missions .mission i
+{
+    font-size: 40px;
+}
+#about .missions .mission h5
+{
+    font-weight: bold;
+    margin-top: 20px;
+}
+#about .missions .mission:hover
+{
+    color: var(--mainColor);
+}
+#about .missions .our-mission p
+{
+    padding-right: 150px;
+    margin-top: 10px;
+}
+#about .missions .brand
+{
+    float: left;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#about .missions .brand i
+{
+    margin-right: 15px;
+}
+#team
+{
+    padding: 100px;
+}
+#team .caption
+{
+
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
+#team .caption h1
+{
+    font-weight: bold;
+}
+#team .caption hr
+{
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    font-weight: bold;
+    transition: width 0.3s;
+}
+#team .caption:hover hr
+{
+    width: 70px;
+    
+}
+#team .caption p
+{
+    font-size: 20px;
+}
+#team .member
+{
+    text-align: center;
+}
+#team .member-image
+{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+#team .member-image img
+{
+    transition: all 0.5s;
+}
+#team .member-image .social
+{
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+#team .member-image .social a
+{
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+}
+#team .member:hover .social
+{
+    opacity: 1;
+}
+#team .member:hover img
+{
+    transform: scale(1.1,1.1);
+}
+#team .member:hover h4
+{
+    color: var(--mainColor);
+}
+#projects
+{
+    padding: 100px 0;
+    background-color: #fafafa;
+}
+#projects .caption
+{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+#projects .caption h1
+{
+    font-weight: bold;
+}
+#projects .caption hr
+{
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    font-weight: bold;
+    transition: width 0.3s;
+}
+#projects .caption:hover hr
+{
+    width: 70px;
+}
+#projects .caption p
+{
+    font-size: 20px;
+    padding: 0 70px;
+    color: #999;
+}
+#projects .buttons
+{
+    width: 30%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around; 
+}
+#projects .buttons .filter-btn
+{
+    border: none;
+    border-radius: 40%;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#projects .buttons .filter-btn:hover
+{
+    color: var(--mainColor);
+}
+#projects .buttons .active
+{
+    border: solid 1px var(--mainColor);
+    color: var(--mainColor);
+}
+#projects .project
+{
+    background-color: gray;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0px;
+}
+#projects .project .content
+{
+    background-color: #fff;
+    width: 96%;
+    height: 96%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+#projects .project .content h5
+{
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 10px;
+    transition-delay: 0.9s;
+    transition: padding-bottom 1s;
+}
+#projects .project .content p
+{
+    font-size: 18px;
+    color: #999;
+    padding-top: 10px;
+    transition-delay: 0.9s;
+    transition: padding-top 1s;
+}
+#projects .project:hover .content
+{
+    opacity: 1;
+}
+#projects .project img
+{
+    transition: transform 0.3s;
+}
+#projects .project:hover img
+{
+    transform: scale(1.1 , 1.1);
+}
+#projects .project:hover .content h5
+{
+    padding-bottom:0px;
+}
+#projects .project:hover .content p
+{
+    
+    padding-top:0px;
+}
+#projects .contact
+{
+    background-color: #fff;
+    padding: 50px 0;
+}
+#projects .contact-btn
+{
+    background-color: var(--mainColor);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 25px;
+}
+#services
+{
+    padding: 50px 0;
+    background-color: #fafafa;
+}
+#services .caption
+{
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+#services .caption h1
+{
+    font-size: 40px;
+    font-weight: bold !important;
+}
+#services .caption hr
+{
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    font-weight: bold;
+    transition: width 0.3s;
+}
+#services .caption:hover hr
+{
+    width: 70px;
+}
+#services .caption p
+{
+    font-size: 20px;
+    color: #999;
+    margin-top: 20px;
+}
+#services .service
+{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+#services .service i
+{
+    font-size: 40px;
+    margin-right: 10px;
+    margin-top: 6px;
+    color: var(--mainColor);
+}
+#services .service .content h2
+{
+    font-weight: bold;
+    font-size: 22px;
+}
+#services .service .content p
+{
+    color: #999;
+}
+#services .service:hover h2
+{
+    color: var(--mainColor);
+}
+#services .video
+{
+    position: relative;
+}
+#services .video .content
+{
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+#services .video .content h1
+{
+    font-weight: bold;
+}
+#services .video .content hr
+{
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    font-weight: bold;
+    transition: width 0.3s;
+}
+#services .video .content:hover hr
+{
+    width: 70px;
+}
+#services .video .content p
+{
+    font-size: 20px;
+}
+#services .video .content i
+{
+    font-size: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+#services .reviews .title
+{
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+
+}
+#services .reviews .title h1
+{
+    font-weight: bold;
+
+}
+#services .reviews .title hr
+{
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    font-weight: bold;
+    transition: width 0.3s;
+}
+#services .reviews .title:hover hr
+{
+    width: 70px;
+}
+#services .reviews .title p
+{
+    font-size: 20px;
+    color: #999;
+    margin-top: 20px;
+}
+#services .reviews #reviews-slider
+{
+    width: 60%;
+    background-color: #ddd;
+    margin: auto;
+    padding: 30px;
+}
+#services .reviews #reviews-slider .main-image
+{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 30px;
+}
+#services .reviews #reviews-slider .main-image img
+{
+    width: 20%;
+    border-radius: 50%;
+}
+
+#services .reviews #reviews-slider .slide-image
+{
+    height: 100px;
+    width: 80%;
+    cursor: pointer; 
+}
+#services .reviews #reviews-slider .slide-image img
+{
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.image-center
+{
+    transform: scale(1.1,1.1);
+    opacity: 1;    
+}
+#services .services-count
+{
+    background-color: #000;
+    padding: 50px 0;
+    margin: 50px 0;
+    text-align:center;
+
+}
+#services .services-count .service-count
+{
+    color: #fff;
+}
+.brdr
+{
+    border-right: solid 1px #333;
+}
+#services .services-count i
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--mainColor);
+}
+#services .services-count .service-count h1
+{
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+}
+#services .services-count .service-count h5
+{
+    font-size: 16px;
+}
+#blog
+{
+    padding: 30px 0;
+    background-color: #fafafa;
+}
+#blog .caption
+{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+#blog .caption h1
+{
+    font-weight: bold;
+
+}
+#blog .caption p
+{
+    font-size: 20px;
+    color: #999;
+    padding: 20px 50px;
+}
+#blog .caption hr
+{
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    font-weight: bold;
+    transition: width 0.3s;
+}
+#blog .caption:hover hr
+{
+    width: 70px;
+}
+#blog .blog
+{
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+#blog .blog img
+{
+    transition: all 0.3s;
+}
+#blog .blog img:hover
+{
+    opacity: 0.6;
+    transform: scale(1.1,1.1);
+}
+#blog .blog .content
+{
+    padding: 20px;
+    transition: all .5s;
+}
+#blog .blog .content h6
+{
+    color: #999;
+    margin-bottom: 20px;
+}
+#blog .blog .content h6 a
+{
+    color: #000;
+    font-weight: 600;
+}
+#blog .blog .content h6 a:hover
+{
+    color: var(--mainColor);
+    text-decoration: none;
+}
+#blog .blog .content .title
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    line-height: 20px;
+}
+#blog .blog .content .title:hover
+{
+    color: var(--mainColor);
+    text-decoration: none;
+}
+#blog .blog .content p
+{
+    padding-top: 20px;
+    color: #868686;
+    font-size: 18px;
+}
+#blog .blog .content .read-more
+{
+    color: var(--mainColor);
+    font-size: 14px;
+    font-weight: bold;
+}
+#blog .blog .content .read-more:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+#blog .blog .content h5
+{
+    background-color: var(--mainColor);
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    width: 40%;
+    font-weight: bold;
+    padding:10px 20px;
+    position: absolute;
+    top:20px;
+    right:0px
+}
+#blog .prices
+{
+    padding: 100px 0px;
+    text-align: center;
+    background-image: url('../images/pricing.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+#blog .prices .title
+{
+    width: 70%;
+    margin: 100px auto;
+    color: #fff;
+}
+#blog .prices .title h1
+{
+    font-weight: bold;
+}
+#blog .prices .title hr
+{
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    font-weight: bold;
+    transition: width 0.3s;
+}
+#blog .prices .title:hover hr
+{
+    width: 70px;
+}
+#blog .prices .title p
+{
+    font-size: 20px;
+    padding: 20px 40px;
+    
+}
+#blog .prices .price .head
+{
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+#blog .prices .price:hover .head
+{
+    color: var(--mainColor);
+}
+#blog .prices .price .head h2 ,h1
+{
+    font-weight: bold;
+}
+#blog .prices .price .head h1
+{
+    font-size: 120px;
+    margin: 0px;
+}
+#blog .prices .price .head h1 i
+{
+    margin-right: 10px;
+    font-size: 30px;
+    position: relative;
+    bottom: 60px;
+    left: 0px;
+
+}
+#blog .prices .price .info
+{
+    padding: 50px 20px;
+    background-color: #fff;
+}
+#blog .prices .price .foot
+{
+    background-color: #000;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#blog .prices .price .foot:hover
+{
+    background-color: var(--mainColor);
+}
+#blog .prices .price .foot a
+{
+    padding: 10px 130px;
+    color:#fff;
+}
+#blog .prices .price .foot:hover a
+{
+    text-decoration: none;
+}
+#blog .prices .middle
+{
+    transform: scale(1.1,1.1);
+    margin: 0px 20px;
+    position:realtive;
+    overflow: hidden;
+    
+}
+#blog .prices .middle .head
+{
+    background-color: var(--mainColor);
+    color: #fff;
+    padding: 20px 0px;
+}
+#blog .prices .middle .head h1
+{
+    font-size: 120px;
+    margin: 0px;
+}
+#blog .prices .middle .head h1 i
+{
+    margin-right: 10px;
+    font-size: 30px;
+    position: relative;
+    bottom: 60px;
+    left: 0px;
+
+}
+#blog .prices .middle .info
+{
+    background-color: #fff;
+    padding: 50px 20px;
+}
+#blog .prices .middle .foot
+{
+    background-color: #000;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#blog .prices .middle .foot:hover
+{
+    background-color: var(--mainColor);
+}
+
+#blog .prices .middle .foot a
+{
+    padding: 10px 130px;
+    color:#fff;
+}
+#blog .prices .middle .foot:hover a
+{
+    text-decoration: none;
+}
+#blog .prices .middle h5
+{
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: -40px;
+    transform: rotate(-45deg);
+    padding: 15px 55px;
+
+}
+
+#blog .logos .images
+{
+    position: relative;
+    padding: 100px 0px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+#blog .logos .images .image
+{
+    width: 20%;
+    text-align: center;
+    float: left;
+    padding: 100px 0px;
+}
+#blog .logos .images .image img
+{
+    width: 40%;
+    height: 40%;
+    opacity: .7;
+    cursor: pointer;
+
+}
+#blog .logos .images .image img:hover
+{
+    opacity: 1;
+}
+#blog .logos .logo1
+{
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    animation-name: posit;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+#blog .logos .logo2
+{
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    
+}
+@keyframes posit
+{
+    0%{top:0%;left:0%}
+    20%{top:0%;left:-20%}
+    40%{top:0%;left:-40%}
+    60%{top:0%;left:-60%}
+    80%{top:0%;left:-80%}
+    90%{top:0%;left:-100%}
+    100%{top:0%;left:-100%}
+    
+}
+#contact
+{
+    background-color: #fafafa;
+    padding: 100px 0px;
+}
+#contact .caption
+{
+    width: 70%;
+    margin: 0px auto 50px;
+    text-align: center;
+}
+#contact .caption h1
+{
+    font-weight: bold;
+}
+#contact .caption hr
+{
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    font-weight: bold;
+    transition: width 0.3s;
+}
+#contact .caption:hover hr
+{
+    width: 70px;
+}
+
+#contact .caption p
+{
+    font-size: 20px;
+    color: #868686;
+}
+#contact .info .address
+{
+    display: flex;
+    justify-content: left;
+}
+#contact .info .address i
+{
+    font-size: 40px;
+    margin-right: 20px;
+    color: var(--mainColor);
+}
+#contact .info .address .address-info
+{
+    line-height: 10px;
+}
+#contact .info .address h3
+{
+    font-weight: bold;
+}
+#contact .info .address:hover h3
+{
+    color: var(--mainColor);
+}
+
+#contact .info .address p
+{
+    font-size: 14px;
+    color: #868686;
+}
+#contact .info .address p a
+{
+    color: #868686;
+}
+#contact .info .address p a:hover
+{
+    color: var(--mainColor);
+    text-decoration: none;
+}
+#contact button
+{
+    font-weight: bold;
+    padding: 10px 25px;
+    border: none;
+    background-color: var(--mainColor);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#contact button:hover
+{
+    opacity: .9;
+}
+footer
+{
+    background-color: #333;
+    color: #fff;
+    
+}
+footer .foot-logo
+{
+    text-align: center;
+    padding: 50px;
+}
+footer h2
+{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+footer ul li 
+{
+    list-style-type: none;
+    text-align: left;
+}
+footer a ,p
+{
+    color: #b0b0b0;
+}
+footer a:hover
+{
+    color: var(--mainColor);
+    text-decoration: none;
+}
+footer .skills
+{
+    line-height: 40px;
+}
+footer .skills a
+{
+ border: solid 1px #b0b0b0;
+ border-radius: 3px;
+ padding: 5px;
+ margin-right: 5px;
+}
+footer .skills a:hover
+{
+    border: solid 1px var(--mainColor);
+}
+footer .foot
+{
+    padding: 20px 0px;
+    background-color: #222;
+}
+footer .foot a
+{
+    color: #fff;
+    margin-right: 30px;
+}
+footer .foot a:hover
+{
+    color: var(--mainColor);
+}
+footer .foot p
+{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+footer .foot p a
+{
+    color: #fff;
+    font-weight: bold;
+}
+
